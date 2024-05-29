@@ -10,4 +10,4 @@ The goal of the library are:
 
 
 ==
-_The name kari is a reference to the indigenous people known as Kariñas_
+_The name kari is a reference to the indigenous people known as [Kariñas](https://en.wikipedia.org/wiki/Kalina_people)_
