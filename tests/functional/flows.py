@@ -1,8 +1,7 @@
-from kari.flows import flow
+from kari.flows.flow import make_flow
+from kari.flows.config import load_config
 
 def test_that_we_can_make_flows():
-    pass
-    """config = load_pipeline_config('test_pipeline.yml')
-    pipeline = create(config)
-    assert pipeline.name == 'pipeline'
-    assert len(pipeline.steps) == 5"""
+    config = load_config('tests/files/generic_flow.yml')
+    flow = make_flow(config)
+    flow({})
