@@ -1,0 +1,13 @@
+type: 'linear'
+steps:
+  - type: 'command'
+    name: 'step1'
+    command: 'print("My Step")'
+  - type: 'command'
+    name: 'step2'
+    command: 'print("My Second Step")'
+  - type: 'append_all_outputs'
+    name: 'step3'
+  - type: 'output'
+    name: 'step4'
+    output_path: 'tmp/generic_flow/generic_flow_test.txt'
