@@ -1,4 +1,3 @@
-import json
 from ollama import Client
 
 def make_llm_ollama_step(config):
@@ -16,6 +15,5 @@ def make_llm_ollama_step(config):
         # Apply the prompt template to the input
         prompt = promp_template.format(input=input, **state)
         output = client.chat(model, messages=[{ 'role': 'user', 'content': prompt}])
-        #output = json.dumps(output)
         return output["message"]["content"]
     return step

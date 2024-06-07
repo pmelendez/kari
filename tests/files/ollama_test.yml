@@ -8,4 +8,4 @@ steps:
     model: 'phi3'
   - type: 'output'
     name: 'step4'
-    output_path: 'ollama_test.txt'
+    output_path: 'tmp/ollama_test/ollama_test.txt'
