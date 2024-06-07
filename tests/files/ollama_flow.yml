@@ -1,0 +1,25 @@
+flows:
+  - name: ollama_test
+    type: 'linear'
+    steps:
+      - type: 'llm_ollama'
+        name: 'step1'
+        host: '192.168.2.207'
+        port: '11434'
+        prompt_template: 'tests/files/venezuela-capital.prompt'
+        model: 'phi3'
+      - type: 'output'
+        name: 'step4'
+        output_path: 'tmp/ollama_test/ollama_test.txt'
+  - name: ollama_test_prompt_in_file
+    type: 'linear'
+    steps:
+      - type: 'llm_ollama'
+        name: 'step1'
+        host: '192.168.2.207'
+        port: '11434'
+        prompt_template: 'who where the founders of Apple Computers?'
+        model: 'llama2'
+      - type: 'output'
+        name: 'step4'
+        output_path: 'tmp/ollama_test/ollama_test.txt'
