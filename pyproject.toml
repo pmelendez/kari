@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kari"
+version = "0.1.0"
+description = "kari is a Python library for orchestrating Large Language Models (LLMs) inference pipelines"
+authors = ["Pedro Melendez <pmelendez@pevicom.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyYAML = "^6.0.1"
+ollama = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
